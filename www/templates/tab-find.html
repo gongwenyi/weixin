@@ -1,14 +1,15 @@
-<ion-view view-title="发现" style="background-color: #eee;">
-  <ion-header-bar align-title="left" class="bar-dark">
-    <h1 class="title">微信</h1>
+<ion-view view-title="微信">
+
+  <ion-nav-buttons side="right">
     <div class="buttons">
       <a class="button button-icon icon ion-android-search"></a>
       <a class="button button-icon icon ion-android-add"></a>
     </div>
-  </ion-header-bar>
-  <ion-content>
+  </ion-nav-buttons>
+
+  <ion-content style="background-color: #eee;">
     <div class="list find-list">
-      <a class="item item-icon-left" ng-href="#/pengyouquan">
+      <a class="item item-icon-left" href="#/tab/find/friendscircle">
         <i class="icon ion-aperture" style="color: #11C1F3;"></i>
         朋友圈
         <div class="new-friends-info">
@@ -47,4 +48,5 @@
       </a>
     </div>
   </ion-content>
+
 </ion-view>

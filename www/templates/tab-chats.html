@@ -1,14 +1,15 @@
-<ion-view  view-title="聊天">
-  <ion-header-bar align-title="left" class="bar-dark">
-    <h1 class="title">微信</h1>
+<ion-view  view-title="微信">
+
+  <ion-nav-buttons side="right">
     <div class="buttons">
       <a class="button button-icon icon ion-android-search"></a>
       <a class="button button-icon icon ion-android-add"></a>
     </div>
-  </ion-header-bar>
+  </ion-nav-buttons>
+
   <ion-content>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right gwy-chats-list-item" ng-repeat="chat in chats" type="item-text-wrap" ng-click="goin(chat.id, chat)">
+      <ion-item class="item-remove-animate item-avatar item-icon-right gwy-chats-list-item" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}" ng-click="goin(chat)">
         <img ng-src="{{chat.face}}">
         <h2>{{chat.name}}</h2>
         <p>{{chat.lastText}}</p>
@@ -20,4 +21,5 @@
       </ion-item>
     </ion-list>
   </ion-content>
+
 </ion-view>

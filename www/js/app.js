@@ -14,7 +14,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
-
     }
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
@@ -48,17 +47,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     })
 
-  .state('chat-detail', {
-    url: '/chat-detail/:chatId',
+  .state('tab.chat-detail', {
+    url: '/chats/:chatId',
     views: {
-      '': {
+      'tab-chats': {
         templateUrl: 'templates/chat-detail.html',
         controller: 'ChatDetailCtrl'
       }
     }
   })
-
-  // Each tab has its own nav history stack:
 
   .state('tab.friends', {
     url: '/friends',
@@ -70,10 +67,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })
 
-  .state('friendinfo', {
-    url: '/friendinfo/:friendId',
+  .state('tab.friendinfo', {
+    url: '/friends/:peopleId',
     views: {
-      '': {
+      'tab-friends': {
         templateUrl: 'templates/friendinfo.html',
         controller: 'FriendinfoCtrl'
       }
@@ -90,6 +87,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })
 
+  .state('tab.friendscircle', {
+    url: '/find/friendscircle',
+    views: {
+      'tab-find': {
+        templateUrl: 'templates/friendscircle.html',
+        controller: 'FriendscircleCtrl'
+      }
+    }
+  })
+
   .state('tab.aboutme', {
     url: '/aboutme',
     views: {
@@ -100,21 +107,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     }
   })
 
-  .state('userinfo', {
-    url: '/userinfo',
+  .state('tab.userinfo', {
+    url: '/aboutme/userinfo',
     views: {
-      '': {
+      'tab-aboutme': {
         templateUrl: 'templates/userinfo.html',
         controller: 'UserinfoCtrl'
-      }
-    }
-  })
-  .state('pengyouquan', {
-    url: '/pengyouquan',
-    views: {
-      '': {
-        templateUrl: 'templates/pengyouquan.html'
-        //controller: 'UserinfoCtrl'
       }
     }
   });

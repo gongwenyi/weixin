@@ -1,11 +1,12 @@
-<ion-view view-title="通讯录">
-  <ion-header-bar align-title="left" class="bar-dark">
-    <h1 class="title">微信</h1>
+<ion-view view-title="微信">
+
+  <ion-nav-buttons side="right">
     <div class="buttons">
       <a class="button button-icon icon ion-android-search"></a>
       <a class="button button-icon icon ion-android-add"></a>
     </div>
-  </ion-header-bar>
+  </ion-nav-buttons>
+
   <ion-content>
     <ion-list>
       <ion-item class="gwy-friends-list-item">
@@ -36,7 +37,7 @@
     <!-- 联系人 -->
     <ion-list ng-repeat="friend in friends">
       <p class="friends-index" id="{{friend.index}}" name="{{friend.index}}">{{friend.index}}</p>
-      <ion-item class="item-avatar gwy-friends-list-item" ng-repeat="people in friend.peoples" type="item-text-wrap" ng-click="goin(people.id)" ng-href="">
+      <ion-item class="item-avatar gwy-friends-list-item" ng-repeat="people in friend.peoples" type="item-text-wrap" href="#/tab/friends/{{people.id}}">
         <img ng-src="{{people.face}}">
         <h2>{{people.name}}</h2>
       </ion-item>
@@ -70,4 +71,5 @@
     <a href="#Y">Y</a>
     <a href="#Z">Z</a>
   </div>
+
 </ion-view>

@@ -1,43 +1,42 @@
-<ion-header-bar align-title="left" class="bar-dark">
-  <div class="buttons">
-    <button class="button button-icon icon ion-android-arrow-back" ng-click="goBack()"></button>
-  </div>
-  <h1 class="title">详细资料</h1>
-  <div class="buttons">
-    <button class="button icon ion-android-more-vertical"></button>
-  </div>
-</ion-header-bar>
-<ion-content style="background-color: #eee;">
-  <div class="list gwy-friendinfo-list">
-    <a class="item item-thumbnail-left" href="#">
-      <img ng-src="{{friendinfo.face}}">
-      <h2>{{friendinfo.name}}</h2>
-      <p>昵称：{{friendinfo.nickname}}</p>
-    </a>
-  </div>
-  <div class="list gwy-friendinfo-list">
-    <a class="item" href="#">
-      设置备注和标签
-    </a>
-    <a class="item" href="#">
-      电话号码<span style="margin-left: 30px; color: #4E8AF1; font-size: 14px;">{{friendinfo.phone}}</span>
-    </a>
-  </div>
-  <div class="list gwy-friendinfo-list">
-    <a class="item" href="#">
-      <h2 class="photo-info">个人相册</h2>
-      <div class="photo-box">
-        <div ng-repeat="photo in friendinfo.photos" class="photo-img"><img ng-src="{{photo}}"></div>
-      </div>
-    </a>
-    <a class="item" href="#">
-      更多
-    </a>
-  </div>
-  <button class="button button-block button-balanced btn-94">
-    发消息
-  </button>
-  <button class="button button-block button-light btn-94">
-    视频聊天
-  </button>
-</ion-content>
+<ion-view view-title="详细资料">
+
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-android-more-vertical"></button>
+  </ion-nav-buttons>
+
+  <ion-content style="background-color: #eee;">
+    <div class="list gwy-friendinfo-list">
+      <a class="item item-thumbnail-left" href="#">
+        <img ng-src="{{friendinfo.face}}">
+        <h2>{{friendinfo.name}}</h2>
+        <p>昵称：{{friendinfo.nickname}}</p>
+      </a>
+    </div>
+    <div class="list gwy-friendinfo-list">
+      <a class="item" href="#">
+        设置备注和标签
+      </a>
+      <a class="item" href="#">
+        电话号码<span style="margin-left: 30px; color: #4E8AF1; font-size: 14px;">{{friendinfo.phone}}</span>
+      </a>
+    </div>
+    <div class="list gwy-friendinfo-list">
+      <a class="item" href="#">
+        <h2 class="photo-info">个人相册</h2>
+        <div class="photo-box">
+          <div ng-repeat="photo in friendinfo.photos" class="photo-img"><img ng-src="{{photo}}"></div>
+        </div>
+      </a>
+      <a class="item" href="#">
+        更多
+      </a>
+    </div>
+    <button class="button button-block button-balanced btn-94">
+      发消息
+    </button>
+    <button class="button button-block button-light btn-94">
+      视频聊天
+    </button>
+  </ion-content>
+
+</ion-view>

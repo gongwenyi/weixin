@@ -1,14 +1,15 @@
-<ion-view view-title="我" style="background-color: #eee;">
-  <ion-header-bar align-title="left" class="bar-dark">
-    <h1 class="title">微信</h1>
+<ion-view view-title="微信">
+
+  <ion-nav-buttons side="right">
     <div class="buttons">
       <a class="button button-icon icon ion-android-search"></a>
       <a class="button button-icon icon ion-android-add"></a>
     </div>
-  </ion-header-bar>
-  <ion-content>
+  </ion-nav-buttons>
+
+  <ion-content style="background-color: #eee;">
     <div class="list find-list">
-      <a class="item item-thumbnail-left" ng-href="#/userinfo" nav-direction="forward">
+      <a class="item item-thumbnail-left" href="#tab/aboutme/userinfo">
         <img ng-src="img/mike.png">
         <h2>老王</h2>
         <img class="icon-erweima-aboutme" ng-src="img/icon-erweima.png">
@@ -47,4 +48,5 @@
       </a>
     </div>
   </ion-content>
+
 </ion-view>
