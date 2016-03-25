@@ -1,0 +1,45 @@
+<ion-header-bar align-title="left" class="bar-dark">
+  <div class="buttons">
+    <button class="button button-icon icon ion-android-arrow-back" ng-click="goBack()"></button>
+  </div>
+  <h1 class="title">个人信息</h1>
+</ion-header-bar>
+<ion-content style="background-color: #eee;">
+  <div class="list gwy-userinfo-list">
+    <a class="item" href="#">
+      <span class="user-img-title">头像</span>
+      <img class="face-img" ng-src="{{userinfo.face}}">
+    </a>
+    <a class="item" href="#">
+      昵称
+      <span class="user-info">{{userinfo.nickname}}</span>
+    </a>
+    <a class="item" href="#">
+      微信号
+      <span class="user-info">{{userinfo.weixinhao}}</span>
+    </a>
+    <a class="item" href="#">
+      二维码名片
+      <img class="icon-erweima-userinfo" ng-src="img/icon-erweima.png">
+    </a>
+    <a class="item" href="#">
+      我的地址
+      <span class="user-info">{{userinfo.address}}</span>
+    </a>
+  </div>
+  <div class="list gwy-userinfo-list">
+    <a class="item" href="#">
+      性别
+      <span class="user-info">{{userinfo.sex}}</span>
+    </a>
+    <a class="item" href="#">
+      地区
+      <span class="user-info">{{userinfo.area}}</span>
+    </a>
+    <a class="item" href="#">
+      个性签名
+      <span class="user-info">{{userinfo.signature}}</span>
+    </a>
+  </div>
+</ion-content>
+

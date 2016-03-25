@@ -1,0 +1,221 @@
+/* Empty. Add your own CSS if you like */
+
+/* tab-chats.html */
+.gwy-chats-list-item .item-content{
+  padding: 14px 49px 14px 72px;
+}
+.gwy-chats-list-item .item-content > img:first-child{
+  top: 12px;
+  left: 12px;
+  max-width: 46px;
+  max-height: 46px;
+  border-radius: 0;
+}
+.gwy-chats-list-item .item-content > i.icon-accessory{
+  height: auto;
+  top: 14px;
+  right: 16px;
+  font-size: 12px;
+}
+.gwy-chats-list-item .item-content > .badge{
+  left: 45px;
+  right: auto;
+  top: 7px;
+  padding: 1px 6px;
+  font-size: 12px;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+
+/* tab-friends.html */
+.gwy-friends-list-item{
+  width: 92%;
+  margin-left: 3%;
+  padding: 8px;
+  padding-left: 0;
+  padding-right: 0;
+  border-left: none;
+  border-right: none;
+  border-color: #eee;
+}
+.gwy-friends-list-item.item-complex{
+  padding-bottom: 0;
+}
+.gwy-friends-list-item .icon-box{
+  float: left;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  background-color: #000;
+}
+.icon-box.bgc-energized{
+  background-color: #ffc900;
+}
+.icon-box.bgc-balanced{
+  background-color: #33cd5f;
+}
+.icon-box.bgc-positive{
+  background-color: #387ef5;
+}
+.gwy-friends-list-item h2{
+  height: 36px;
+  padding-left: 10px;
+  line-height: 36px;
+}
+.gwy-friends-list-item .item-content{
+  // min-height: auto;
+  min-height: 44px;
+  padding: 9px 0px 9px 36px;
+}
+.gwy-friends-list-item .item-content > img:first-child{
+  top: 8px;
+  left: 0;
+  max-width: 36px;
+  max-height: 36px;
+  border-radius: 0;
+}
+.gwy-friends-list-item.item-avatar{
+   // min-height: auto;
+  min-height: 44px;
+}
+.friends-index{
+  margin-top: -2px;
+  margin-bottom: -1px;
+  padding: 2px 0;
+  padding-left: 3%;
+  background-color: #eee;
+}
+.index-href{
+  position: fixed;
+  right: 0;
+  top: 44px;
+  width: 5%;
+}
+.index-href a{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+
+/* tab-find.html */
+.find-list.list{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.find-list .item-icon-left{
+  border-color: #eee;
+}
+.find-list .item-icon-left .icon{
+  font-size: 26px;
+}
+.new-friends-info{
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  max-width: 36px;
+  max-height: 36px;
+}
+.new-friends-info img{
+  width: 100%;
+  height: 100%;
+}
+/* tab-aboutme.html */
+.find-list .item-thumbnail-left{
+  min-height: 80px;
+  padding-left: 80px;
+  border-color: #eee;
+}
+.find-list .item-thumbnail-left > img:first-child{
+  max-width: 56px;
+  max-height: 56px;
+}
+.find-list .item-thumbnail-left h2{
+  max-height: 56px;
+  line-height: 56px;
+}
+.icon-erweima-aboutme{
+  position: absolute;
+  right: 26px;
+  top: 26px;
+  max-width: 22px;
+  max-height: 22px;
+}
+
+/* friendinfo.html */
+.gwy-friendinfo-list{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.gwy-friendinfo-list a.item{
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-color: #eee;
+}
+.gwy-friendinfo-list .item-thumbnail-left{
+  padding-left: 90px;
+  min-height: 84px;
+}
+.gwy-friendinfo-list .item-thumbnail-left > img:first-child{
+  max-width: 60px;
+  max-height: 60px;
+}
+.photo-info{
+  float: left;
+  height: 50px;
+  line-height: 50px;
+}
+.photo-box{
+  float: left;
+  margin-left: 20px;
+}
+.photo-img{
+  float: left;
+  max-width: 50px;
+  max-height; 50px;
+  margin-left: 10px;
+}
+.photo-img img{
+  width: 100%;
+  height; 100%;
+}
+.btn-94.button.button-block{
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* userinfo.html */
+.gwy-userinfo-list.list{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.gwy-userinfo-list .item{
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-color: #eee;
+}
+.gwy-userinfo-list .user-info{
+  float: right;
+  font-size: 14px;
+  color: #666;
+}
+.gwy-userinfo-list .user-img-title{
+  display: inline-block;
+  line-height: 60px;
+}
+.gwy-userinfo-list .face-img{
+  float: right;
+  max-width: 60px;
+  max-height: 60px;
+}
+.icon-erweima-userinfo{
+  float: right;
+  max-width: 22px;
+  max-height: 22px;
+}

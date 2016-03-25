@@ -1,0 +1,23 @@
+<ion-view  view-title="聊天">
+  <ion-header-bar align-title="left" class="bar-dark">
+    <h1 class="title">微信</h1>
+    <div class="buttons">
+      <a class="button button-icon icon ion-android-search"></a>
+      <a class="button button-icon icon ion-android-add"></a>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right gwy-chats-list-item" ng-repeat="chat in chats" type="item-text-wrap" ng-click="goin(chat.id, chat)">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon icon-accessory">{{chat.lastTime}}</i>
+        <span class="badge badge-assertive" ng-show="chat.newMessageNum">{{chat.newMessageNum | formatNewMessaageNum}}</span>
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
