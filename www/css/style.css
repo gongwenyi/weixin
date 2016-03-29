@@ -93,9 +93,10 @@
   position: fixed;
   right: 0;
   top: 44px;
-  width: 5%;
+  width: 6%;
+  padding-left: 1%;
 }
-.index-href a{
+.index-href span{
   display: block;
   width: 100%;
   text-align: center;

@@ -8,6 +8,7 @@
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'starter.filter'])
 
 .run(function($ionicPlatform) {
+
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -36,7 +37,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     abstract: true,
     templateUrl: 'templates/tabs.html'
   })
-
+  // 微信
   .state('tab.chats', {
       url: '/chats',
       views: {
@@ -46,7 +47,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       }
     })
-
+  // 微信--聊天
   .state('tab.chat-detail', {
     url: '/chats/:chatId',
     views: {
@@ -56,7 +57,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
-
+  // 联系人
   .state('tab.friends', {
     url: '/friends',
     views: {
@@ -66,7 +67,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
-
+  // 联系人--好友信息
   .state('tab.friendinfo', {
     url: '/friends/:peopleId',
     views: {
@@ -76,7 +77,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
-
+  // 发现
   .state('tab.find', {
     url: '/find',
     views: {
@@ -86,7 +87,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
-
+  // 发现--朋友圈
   .state('tab.friendscircle', {
     url: '/find/friendscircle',
     views: {
@@ -96,7 +97,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
-
+  // 发现--附近的人
+  .state('tab.nearbypeople', {
+    url: '/find/nearbypeople',
+    views: {
+      'tab-find': {
+        templateUrl: 'templates/nearbypeople.html',
+        controller: 'NearbypeopleCtrl'
+      }
+    }
+  })
+  // 我
   .state('tab.aboutme', {
     url: '/aboutme',
     views: {
@@ -106,7 +117,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
-
+  // 我-我的信息
   .state('tab.userinfo', {
     url: '/aboutme/userinfo',
     views: {
